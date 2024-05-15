@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:alpine3.18
+    container_name: todo-postgres-container
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./todo_data:/var/lib/postgresql/data
+    networks:
+      - todo-network
+
+  backend:
+    depends_on:
+      - postgres
+    build: ./
+    ports:
+      - "4000:4000"
+    networks:
+      - todo-network
+
+networks:
+  todo-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

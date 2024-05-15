@@ -1,0 +1,6 @@
+build
+node_modules
+todo_data
+pnpm-lock.yaml
+Dockerfile
+docker-compose.yml
