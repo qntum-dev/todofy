@@ -17,7 +17,9 @@ docker compose up
 ```
 
 ### For LocalHost
-
+```
+npm i
+```
 ```
 npm run start
 ```
