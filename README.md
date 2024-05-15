@@ -3,6 +3,7 @@ This is a todo server built with fastify, TypeScript. PostgreSQL is used as a da
 
 ## Features
 - Authentication using JWT and HTTP cookies
+- Schema validation
 - All CRUD operations on todos
 
 ## Starting the server
