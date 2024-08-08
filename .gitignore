@@ -3,3 +3,4 @@ todo_data
 pnpm-lock.yaml
 package-lock.json
 build
+.env
