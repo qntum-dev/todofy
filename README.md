@@ -8,15 +8,23 @@ This is a todo server built with fastify, TypeScript. PostgreSQL is used as a da
 
 ## Starting the server
 
-You can build the server using docker or locally on your host machine.
+Note⚠️ To start the server you have to create a .env file.
 
-### For Docker
+You can create your own .env file from the .env.template or you can use the .env.demo.
+
+If you want to use .env.demo run this command in the root directory
+
+```
+cp ./.env.demo ./.env
+```
+
+### To run the server with Docker use this command
 
 ```
 docker compose up
 ```
 
-### For LocalHost
+### For LocalHost use the following commands
 ```
 npm i
 ```
