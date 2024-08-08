@@ -12,7 +12,13 @@ services:
   backend:
     depends_on:
       - postgres
-    build: ./
+    build: .
+    develop:
+      watch:
+        - action: sync
+          path: ./app
+          target: /app/app
+    
     ports:
       - "4000:4000"
     networks:
